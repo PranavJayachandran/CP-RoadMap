@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./components/Home";
+import CodingPlatforms from "./components/CodingPlatforms";
+import BetterLanguage from "./components/BetterLanguage";
+import Consistency from "./components/Consistency";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Roadmap from "./components/Roadmap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coding-platforms" element={<CodingPlatforms />} />
+        <Route path="/better-language" element={<BetterLanguage />} />
+        <Route path="maintain-consistency" element={<Consistency />} />
+        <Route path="roadmap" element={<Roadmap />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,13 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.font {
+  font-family: "Montserrat";
+}
+.pink-color {
+  color: #bb86f6;
+}
+.banner-gradient {
+  background: hsla(258, 100%, 35%, 1);
+
+  background: linear-gradient(
+    0deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(268, 86%, 75%, 1) 50%,
+    hsla(349, 52%, 61%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(268, 86%, 75%, 1) 50%,
+    hsla(349, 52%, 61%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(268, 86%, 75%, 1) 50%,
+    hsla(349, 52%, 61%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3700B3", endColorstr="#BB86F6", GradientType=1 );
+  background-clip: text;
+  color: transparent;
+}
+.purple-gradient {
+  background: hsla(268, 70%, 50%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(268, 70%, 50%, 1) 35%,
+    hsla(268, 56%, 82%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(268, 70%, 50%, 1) 35%,
+    hsla(268, 56%, 82%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(268, 70%, 50%, 1) 35%,
+    hsla(268, 56%, 82%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7926D8", endColorstr="#D0B8EB", GradientType=1 );
+}
+.blue-gradient-one {
+  background: hsla(258, 100%, 35%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(180, 99%, 27%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(180, 99%, 27%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(180, 99%, 27%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3700B3", endColorstr="#018786", GradientType=1 );
+}
+.blue-gradient-two {
+  background: hsla(258, 100%, 35%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(180, 99%, 27%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(180, 99%, 27%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(258, 100%, 35%, 1) 0%,
+    hsla(180, 99%, 27%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3700B3", endColorstr="#018786", GradientType=1 );
+}
+.pink-gradient {
+  background: hsla(349, 52%, 61%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(349, 52%, 61%, 1) 0%,
+    hsla(268, 86%, 75%, 1) 68%
+  );
+
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(349, 52%, 61%, 1) 0%,
+    hsla(268, 86%, 75%, 1) 68%
+  );
+
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(349, 52%, 61%, 1) 0%,
+    hsla(268, 86%, 75%, 1) 68%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CF6679", endColorstr="#BB86F6", GradientType=1 );
+}
+
 body {
+  background: url("./assets/bg-cp.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
